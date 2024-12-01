@@ -25,9 +25,9 @@ function SendSms() {
         mobile: recipient, // Recipient's phone number
       };
 
-      // Send request to your backend proxy
+      // Send request to your backend proxy (use relative URL for development)
       const response = await axios.post(
-        "http://localhost:3001/send-sms",
+        "/api/send-sms", // This uses Vite's proxy
         formData
       );
 
