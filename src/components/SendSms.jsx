@@ -27,7 +27,7 @@ function SendSms() {
 
       // Send request to your backend proxy (use relative URL for development)
       const response = await axios.post(
-        "/api/send-sms", // This uses Vite's proxy
+        "http://localhost:3001/api/send-sms", // This uses your Express backend
         formData
       );
 
